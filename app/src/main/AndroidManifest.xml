@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Project">
         <activity
+            android:name=".main1"
+            android:exported="false" />
+        <activity
+            android:name=".step5"
+            android:exported="false" />
+        <activity
+            android:name=".step4"
+            android:exported="false" />
+        <activity
+            android:name=".male"
+            android:exported="false" />
+        <activity
+            android:name=".female"
+            android:exported="false" />
+        <activity
             android:name=".stel2"
             android:exported="false" />
         <activity

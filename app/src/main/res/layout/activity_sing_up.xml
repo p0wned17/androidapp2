@@ -43,7 +43,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
     <EditText
-        android:id="@+id/name"
+        android:id="@+id/username"
         android:layout_width="268dp"
         android:layout_height="39dp"
         android:layout_marginTop="25dp"
@@ -73,7 +73,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name" />
+        app:layout_constraintTop_toBottomOf="@+id/username" />
 
     <EditText
         android:id="@+id/password"
@@ -93,7 +93,7 @@
         app:layout_constraintTop_toBottomOf="@+id/email" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/passwordret"
         android:layout_width="268dp"
         android:layout_height="39dp"
         android:layout_marginTop="25dp"
@@ -119,7 +119,7 @@
         android:background="@drawable/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/passwordret" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
