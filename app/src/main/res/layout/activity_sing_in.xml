@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6f9cd2"
+    tools:context=".sing_in">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="136dp"
+        android:layout_height="78dp"
+        android:layout_marginBottom="36dp"
+        android:text="Home Gym"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Home Gym" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="133dp"
+        android:layout_height="101dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.625"
+        app:srcCompat="@drawable/logo_on" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="215dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edittext"
+        android:drawableStart="@drawable/person"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Ivanov"
+        android:inputType="textPersonName"
+        android:paddingStart="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/editText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="215dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/edittext"
+        android:drawableStart="@drawable/lock"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="●●●●●●"
+        android:inputType="textPassword"
+        android:paddingStart="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="139dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button"
+        android:text="Sign In"
+        android:textAllCaps="false"
+        android:textColor="#6E9CD2"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="164dp"
+        android:autoLink="all"
+        android:text="@string/podch"
+        android:textColor="#FFFFFF"
+        android:clickable="true"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/podch2"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:clickable="true"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
