@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Project">
         <activity
-            android:name=".main1"
+            android:name=".main2"
             android:exported="false" />
         <activity
             android:name=".step5"

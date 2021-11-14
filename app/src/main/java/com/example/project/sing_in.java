@@ -72,7 +72,7 @@ public class sing_in extends AppCompatActivity {
                        Boolean result =  myDB.checkusernamepassword(user,pass);
                                if(result == true)
                                {
-                                   Intent intent = new Intent(getApplicationContext(), main1.class);
+                                   Intent intent = new Intent(getApplicationContext(), main2.class);
                                    startActivity(intent);
                                    finish();
                                }

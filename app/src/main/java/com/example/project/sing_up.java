@@ -2,6 +2,8 @@ package com.example.project;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -35,7 +37,20 @@ public class sing_up extends AppCompatActivity {
                 String repass = passwordret.getText().toString();
 
                 if(user.equals("")||mail.equals("")||pass.equals("")||repass.equals("")){
-                    Toast.makeText(sing_up.this,"Заполните все поля", Toast.LENGTH_LONG).show();
+                    AlertDialog.Builder builder1 = new AlertDialog.Builder(sing_up.this);
+                    builder1.setMessage("Заполните все поля");
+                    builder1.setCancelable(true);
+
+                    builder1.setPositiveButton(
+                            "Окей",
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int id) {
+                                    dialog.cancel();
+                                }
+                            });
+
+                    AlertDialog alert11 = builder1.create();
+                    alert11.show();
                 }
                 else{
                     if(pass.equals(repass))
@@ -50,15 +65,54 @@ public class sing_up extends AppCompatActivity {
                               finish();
                           }
                           else{
-                              Toast.makeText(sing_up.this,"Регистрация не успешна", Toast.LENGTH_LONG).show();
+                              AlertDialog.Builder builder1 = new AlertDialog.Builder(sing_up.this);
+                              builder1.setMessage("Что-то пошло не так");
+                              builder1.setCancelable(true);
+
+                              builder1.setPositiveButton(
+                                      "Окей",
+                                      new DialogInterface.OnClickListener() {
+                                          public void onClick(DialogInterface dialog, int id) {
+                                              dialog.cancel();
+                                          }
+                                      });
+
+                              AlertDialog alert11 = builder1.create();
+                              alert11.show();
                           }
                        }
                        else{
-                           Toast.makeText(sing_up.this, "Пользователь уже создан. \n Пожалуйста войдите.", Toast.LENGTH_LONG).show();
+                           AlertDialog.Builder builder1 = new AlertDialog.Builder(sing_up.this);
+                           builder1.setMessage("Такой пользователь уже создан");
+                           builder1.setCancelable(true);
+
+                           builder1.setPositiveButton(
+                                   "Окей",
+                                   new DialogInterface.OnClickListener() {
+                                       public void onClick(DialogInterface dialog, int id) {
+                                           dialog.cancel();
+                                       }
+                                   });
+
+                           AlertDialog alert11 = builder1.create();
+                           alert11.show();
                        }
                     }
                     else{
-                        Toast.makeText(sing_up.this, "Нерпавильно набран неправильно", Toast.LENGTH_LONG).show();
+                        AlertDialog.Builder builder1 = new AlertDialog.Builder(sing_up.this);
+                        builder1.setMessage("Что-то пошло не так");
+                        builder1.setCancelable(true);
+
+                        builder1.setPositiveButton(
+                                "Окей",
+                                new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        dialog.cancel();
+                                    }
+                                });
+
+                        AlertDialog alert11 = builder1.create();
+                        alert11.show();
                     }
                 }
             }
