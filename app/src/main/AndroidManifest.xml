@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Project">
         <activity
+            android:name=".push_up3"
+            android:exported="false" />
+        <activity
+            android:name=".push_up2"
+            android:exported="false" />
+        <activity
+            android:name=".push_up1"
+            android:exported="false" />
+        <activity
+            android:name=".push_up"
+            android:exported="false" />
+        <activity
             android:name=".main2"
             android:exported="false" />
         <activity

@@ -17,13 +17,13 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 try {
                     super.run();
-                    sleep(5000);  //Delay of 10 seconds
+                    sleep(1000);
                 } catch (Exception e) {
 
                 } finally {
 
                     Intent i = new Intent(MainActivity.this,
-                            step1.class);
+                            push_up.class);
                     startActivity(i);
                     finish();
                 }

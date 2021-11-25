@@ -6,13 +6,125 @@
     android:layout_height="match_parent"
     tools:context=".main2">
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="#76a1d3"
+        app:layout_constraintBottom_toTopOf="@+id/Handsbutt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="183dp"
+        android:layout_height="34dp"
+        android:gravity="center"
+        android:text="Home Gym"
+        android:textColor="#FFFFFF"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/Handsbutt"
+        android:layout_width="wrap_content"
+        android:layout_height="170dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/imgbut"
+        android:foregroundGravity="center"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/spinebut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ruki_kach"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/spinebut"
+        android:layout_width="wrap_content"
+        android:layout_height="170dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/imgbut"
+        android:foregroundGravity="center"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/torsobut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/spine"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/torsobut"
+        android:layout_width="wrap_content"
+        android:layout_height="170dp"
+        android:layout_marginBottom="92dp"
+        android:background="@drawable/spine"
+        android:foregroundGravity="center"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/torso" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hands"
+        android:textColor="#76a1d3"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/Handsbutt"
+        app:layout_constraintEnd_toEndOf="@+id/Handsbutt"
+        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintStart_toStartOf="@+id/Handsbutt"
+        app:layout_constraintTop_toTopOf="@+id/Handsbutt"
+        app:layout_constraintVertical_bias="0.917" />
+
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Spine"
+        android:textColor="#76a1d3"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/spinebut"
+        app:layout_constraintEnd_toEndOf="@+id/spinebut"
+        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintStart_toStartOf="@+id/spinebut"
+        app:layout_constraintTop_toTopOf="@+id/spinebut"
+        app:layout_constraintVertical_bias="0.886" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Torso"
+        android:textColor="#76a1d3"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/torsobut"
+        app:layout_constraintEnd_toEndOf="@+id/torsobut"
+        app:layout_constraintHorizontal_bias="0.037"
+        app:layout_constraintStart_toStartOf="@+id/torsobut"
+        app:layout_constraintTop_toTopOf="@+id/torsobut"
+        app:layout_constraintVertical_bias="0.916" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

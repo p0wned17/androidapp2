@@ -3,17 +3,18 @@
 
     <item
         android:id="@+id/navigation_home"
-        android:icon="@drawable/ic_home_black_24dp"
-        android:title="пивет"/>
+        android:icon="@drawable/list"
+        android:title="Plan"/>
 
     <item
         android:id="@+id/navigation_dashboard"
-        android:icon="@drawable/ic_dashboard_black_24dp"
-        android:title="пивет"/>
+        android:icon="@drawable/person2"
+        android:title="Lessons"/>
 
     <item
         android:id="@+id/navigation_notifications"
         android:icon="@drawable/ic_notifications_black_24dp"
-        android:title="пивет"/>
+        android:title="Reports"/>
+
 
 </menu>
