@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
                 } finally {
 
                     Intent i = new Intent(MainActivity.this,
-                            push_up.class);
+                            main2.class);
                     startActivity(i);
                     finish();
                 }

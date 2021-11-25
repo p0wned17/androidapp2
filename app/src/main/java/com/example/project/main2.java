@@ -24,5 +24,12 @@ public class main2 extends AppCompatActivity {
                 startActivity(intent1);
             }
         });
+        torso.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2 = new Intent(main2.this, sit_up60.class);
+                startActivity(intent2);
+            }
+        });
     }
 }
