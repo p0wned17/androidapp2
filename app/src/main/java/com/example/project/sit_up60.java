@@ -80,7 +80,7 @@ public class sit_up60 extends AppCompatActivity {
             public void onClick(View v) {
                 button2.setEnabled(false);
                 Intent i = new Intent(sit_up60.this,
-                        push_up2.class);
+                        sit_up1.class);
                 startActivity(i);
                 finish();
             }
@@ -90,7 +90,7 @@ public class sit_up60 extends AppCompatActivity {
             public void onClick(View v) {
                 button3.setEnabled(false);
                 Intent i = new Intent(sit_up60.this,
-                        push_up3.class);
+                        sit_up2.class);
                 startActivity(i);
                 finish();
             }

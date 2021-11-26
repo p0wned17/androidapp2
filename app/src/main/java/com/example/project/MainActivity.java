@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
                 } finally {
 
                     Intent i = new Intent(MainActivity.this,
-                            main2.class);
+                            step1.class);
                     startActivity(i);
                     finish();
                 }

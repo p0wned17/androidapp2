@@ -70,7 +70,7 @@ public class sit_up extends AppCompatActivity {
                     schetcikkkal.setText("900");
                 }
                 if(clicksCount == 10){
-                    Intent intent2 = new Intent(sit_up.this, push_up.class);
+                    Intent intent2 = new Intent(sit_up.this, sit_up60.class);
                     intent2.putExtra("clicker", clicksCount);
                     startActivity(intent2);
                     finish();
