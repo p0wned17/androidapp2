@@ -11,6 +11,7 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 public class push_up extends AppCompatActivity {
@@ -22,6 +23,8 @@ public class push_up extends AppCompatActivity {
         AppCompatButton button1 = (AppCompatButton) findViewById(R.id.button11);
         AppCompatButton button2 = (AppCompatButton) findViewById(R.id.button12);
         AppCompatButton button3 = (AppCompatButton) findViewById(R.id.button13);
+        ProgressBar progressBar = (ProgressBar) findViewById(R.id.progressBar);
+        progressBar.setMax(100);
         Intent intent2 = getIntent();
         Intent intent3 = getIntent();
         Intent intent4 = getIntent();
@@ -35,6 +38,7 @@ public class push_up extends AppCompatActivity {
             button1.setBackgroundTintList(button1.getResources().getColorStateList(R.color.mane));
             button1.setTextColor(Color.parseColor("#FFFFFF"));
             button1.setEnabled(false);
+            progressBar.setProgress(20);
         }
         if(clickcount2 == 20){
             button1.setBackgroundTintList(button1.getResources().getColorStateList(R.color.mane));
@@ -43,6 +47,7 @@ public class push_up extends AppCompatActivity {
             button2.setBackgroundTintList(button2.getResources().getColorStateList(R.color.mane));
             button2.setTextColor(Color.parseColor("#FFFFFF"));
             button2.setEnabled(false);
+            progressBar.setProgress(30);
         }
         if(clickcount3 == 30){
             button1.setBackgroundTintList(button1.getResources().getColorStateList(R.color.mane));
@@ -54,6 +59,7 @@ public class push_up extends AppCompatActivity {
             button3.setBackgroundTintList(button3.getResources().getColorStateList(R.color.mane));
             button3.setTextColor(Color.parseColor("#FFFFFF"));
             button3.setEnabled(false);
+            progressBar.setProgress(40);
         }
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
