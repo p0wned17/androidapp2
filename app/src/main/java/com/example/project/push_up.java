@@ -27,10 +27,10 @@ public class push_up extends AppCompatActivity {
         progressBar.setMax(100);
         Intent intent2 = getIntent();
         Intent intent3 = getIntent();
-        Intent intent4 = getIntent();
-        Integer clickCount2 = 0;
+        Intent intent4 = getIntent(); // объявление о получении
+        Integer clickCount2 = 0;// присваивание переменной значения
         Integer clickCount3 = 0;
-        Integer clickcount3 = intent4.getIntExtra("clicker2", clickCount3);
+        Integer clickcount3 = intent4.getIntExtra("clicker2", clickCount3); //получение переменной из текствью
         Integer clickcount2 = intent3.getIntExtra("clicker1", clickCount2);
         Integer clicksCount1 = 0;
         Integer clickcount1 = intent2.getIntExtra("clicker", clicksCount1);

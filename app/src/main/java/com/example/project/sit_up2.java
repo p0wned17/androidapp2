@@ -131,8 +131,8 @@ public class sit_up2 extends AppCompatActivity {
                 }
                 if(clicksCount == 30) {
                     schetcikkkal.setText("3000");
-                    Intent intent2 = new Intent(sit_up2.this, sit_up60.class);
-                    intent2.putExtra("clicker2", clicksCount);
+                    Intent intent2 = new Intent(sit_up2.this, sit_up60.class); // передача переменной
+                    intent2.putExtra("clicker2", clicksCount); // что передаем
                     startActivity(intent2);
                     finish();
                 }
